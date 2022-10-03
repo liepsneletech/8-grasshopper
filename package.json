@@ -1,0 +1,15 @@
+{
+  "name": "8-grasshopper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Monika",
+  "license": "ISC",
+  "devDependencies": {
+    "dead-server": "^1.0.6"
+  }
+}
