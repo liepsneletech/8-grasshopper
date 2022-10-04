@@ -40,15 +40,16 @@ $grey: #99adb7;
   width: 1300px;
   padding-left: 20px;
   padding-right: 20px;
-  display: flex;
-  justify-content: center;
+  margin-left: calc((100% - 1300px) / 2);
 }
 
 .full-container {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.d-flex {
   display: flex;
-  justify-content: center;
 }
 
 .text-center {
@@ -79,7 +80,7 @@ $grey: #99adb7;
   margin-bottom: 38px;
 }
 
-.header {
+.header-box {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 37px;
