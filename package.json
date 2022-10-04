@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "dead-server --port=4008 --host=localhost"
+    "dev": "dead-server --port=4008 --host=localhost",
+    "sass": "sass --watch scss:css"
   },
   "keywords": [],
   "author": "Monika",
   "license": "ISC",
   "devDependencies": {
-    "dead-server": "^1.0.6"
+    "dead-server": "^1.0.6",
+    "sass": "^1.55.0"
   },
   "repository": {
     "type": "git",
