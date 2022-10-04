@@ -1,7 +1,6 @@
 {
   "name": "8-grasshopper",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "dev": "dead-server --port=4008 --host=localhost"
@@ -11,5 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "dead-server": "^1.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liepsneletech/8-grasshopper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liepsneletech/8-grasshopper/issues"
+  },
+  "homepage": "https://github.com/liepsneletech/8-grasshopper#readme",
+  "description": ""
 }
