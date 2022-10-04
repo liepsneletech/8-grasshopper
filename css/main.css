@@ -24,7 +24,7 @@
 /* REUSABLE */
 /* ********************************************************/
 .container {
-  width: 1300px;
+  max-width: 1300px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: calc((100% - 1300px) / 2);
@@ -39,6 +39,10 @@
   display: flex;
 }
 
+.relative {
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
@@ -51,6 +55,25 @@
   background-color: #45c14e;
   color: #fff;
   border-radius: 30px;
+}
+
+.main-title,
+.section-title,
+.plain-text {
+  color: #0b415e;
+}
+
+.main-title {
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.section-title {
+  font-size: 36px;
+}
+
+.plain-text {
+  font-size: 22px;
 }
 
 /* ********************************************************/
@@ -71,10 +94,97 @@
 /* ********************************************************/
 /* HEADER */
 /* ********************************************************/
+.header {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .header-box {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 37px;
+  margin-bottom: 120px;
+}
+
+.header-box a {
+  color: #99adb7;
+  font-weight: 600;
+}
+
+.main-menu {
+  align-items: center;
+  gap: 44px;
+}
+
+.menu-link-sign-in {
+  margin-right: 20px;
+}
+
+/* ********************************************************/
+/* HERO SECTION */
+/* ********************************************************/
+.hero-container {
+  background-image: url(http://localhost:4008/img/hero__background-hills.svg);
+  background-repeat: no-repeat;
+  background-position-y: 230px;
+  background-size: contain;
+  min-height: 800px;
+}
+
+.hero-text-content {
+  max-width: 46ch;
+  margin-left: calc((100% - 1150px) / 2);
+}
+
+.hero-text-content .main-title {
+  margin-bottom: 29px;
+}
+
+.hero-description {
+  margin-bottom: 31px;
+}
+
+.hero-visual-content {
+  overflow: hidden;
+}
+
+.hero-img-layer {
+  position: absolute;
+}
+
+.hero-img-layer.grasshopper {
+  right: 20px;
+}
+
+.hero-img-layer.smartphone {
+  right: 240px;
+  top: -142px;
+  z-index: 2;
+}
+
+.hero-img-layer.laptop {
+  right: 495px;
+  top: 40px;
+  z-index: 2;
+}
+
+.hero-img-layer.tree {
+  left: 0;
+  top: 40px;
+  z-index: 2;
+}
+
+.hero-img-layer.leaf {
+  left: 0;
+  top: 40px;
+  z-index: 2;
+}
+
+/* ********************************************************/
+/* PROS */
+/* ********************************************************/
+.pros {
+  background-color: #dff8eb;
+  height: 800px;
 }
 
 /* ********************************************************/
