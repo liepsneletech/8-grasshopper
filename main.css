@@ -1,0 +1,65 @@
+/* ********************************************************/
+/* GENERAL */
+/* ********************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gt-america-regular";
+  text-decoration: none;
+}
+
+/* ********************************************************/
+/* FONTS */
+/* ********************************************************/
+
+@font-face {
+  font-family: "gt-america-regular";
+  src: url(./fonts/gt-america-font/gt-america-regular.otf);
+}
+
+@font-face {
+  font-family: "gt-america-bold";
+  src: url(./fonts/gt-america-font/gt-america-bold.otf);
+}
+
+/* ********************************************************/
+/* REUSABLE */
+/* ********************************************************/
+
+.container {
+  width: 1266px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.btn-green {
+  padding: 20px 50px;
+  line-height: 1;
+  background-color: #45c14e;
+}
+
+/*/ ///////// HEADER //////////////*/
+
+.top-bar {
+  height: 40px;
+  line-height: 20px;
+  font-size: 13px;
+  background-color: #45c14e;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 38px;
+}
+
+/*/ ///////// FOOTER //////////////*/
