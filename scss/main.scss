@@ -40,22 +40,10 @@ $grey: #99adb7;
 // containers
 
 .container {
-<<<<<<< HEAD
   width: 1266px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: calc((100% - 1266px) / 2);
-=======
-  max-width: 1300px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: calc((100% - 1300px) / 2);
-}
-
-.full-container {
-  padding-left: 20px;
-  padding-right: 20px;
->>>>>>> 4a705bec6cbca64dba2d427e949441001d2411df
 }
 
 // display and position
@@ -146,6 +134,10 @@ $grey: #99adb7;
 .main-menu {
   align-items: center;
   gap: 44px;
+}
+
+.main-menu > a:hover {
+  text-decoration: underline 2px #99adb7;
 }
 
 .menu-link-sign-in {
