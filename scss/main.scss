@@ -206,6 +206,44 @@ $grey: #99adb7;
   z-index: 2;
 }
 
+.hero-description-box {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+
+.dynamic-text-items {
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  line-height: 26px;
+  font-size: 22px;
+  color: $darkblue2;
+  overflow: hidden;
+  animation: "text-animation" 1s ease-in infinite alternate;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(20%);
+  }
+  40% {
+    transform: translateY(40%);
+  }
+  60% {
+    transform: translateY(60%);
+  }
+  80% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
 /* ********************************************************/
 /* PROS */
 /* ********************************************************/
