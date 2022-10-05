@@ -136,7 +136,8 @@ $grey: #99adb7;
   gap: 44px;
 }
 
-.main-menu > a:hover {
+.menu-link:hover,
+.menu-link-sign-in:hover {
   text-decoration: underline 2px #99adb7;
 }
 
