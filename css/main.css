@@ -1,70 +1,17 @@
-/* ********************************************************/
-/* RESET */
-/* ********************************************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "gt-america-regular", "Arial";
-  text-decoration: none;
-}
+/* Error: expected "{".
+ *    ,
+ * 44 |   width: 1266px;
+ *    |                ^
+ *    '
+ *   scss\main.scss 44:16  root stylesheet */
 
-/* ********************************************************/
-/* FONTS */
-/* ********************************************************/
-@font-face {
-  font-family: "gt-america-regular";
-  src: url(http://localhost:4008/fonts/gt-america-font/gt-america-regular.otf);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 44 \2502    width: 1266px;\d\a    \2502                 ^\a    \2575 \a   scss\\main.scss 44:16  root stylesheet';
 }
-@font-face {
-  font-family: "gt-america-bold";
-  src: url(http://localhost:4008/fonts/gt-america-font/gt-america-bold.otf);
-}
-/* ********************************************************/
-/* REUSABLE */
-/* ********************************************************/
-.container {
-  width: 1266px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: calc((100% - 1266px) / 2);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.btn-green {
-  display: inline-block;
-  padding: 18px 46px;
-  font-size: 18px;
-  line-height: 1;
-  background-color: #45c14e;
-  color: #fff;
-  border-radius: 30px;
-}
-
-/*/ ///////// HEADER //////////////*/
-.top-bar {
-  height: 40px;
-  line-height: 20px;
-  font-size: 13px;
-  background-color: #45c14e;
-  color: #fff;
-  padding: 10px 20px 10px 20px;
-  margin-bottom: 38px;
-}
-
-.header {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 37px;
-}
-
-/*/ ///////// FOOTER //////////////*/
-
-/*# sourceMappingURL=main.css.map */
