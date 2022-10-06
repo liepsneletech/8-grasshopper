@@ -42,7 +42,7 @@ $black: #000;
 // containers
 
 .container {
-  width: 1266px;
+  max-width: 1266px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: calc((100% - 1266px) / 2);
@@ -97,10 +97,15 @@ $black: #000;
 
 .section-title {
   font-size: 36px;
+  text-align: center;
 }
 
 .plain-text {
   font-size: 22px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* ********************************************************/
@@ -165,7 +170,6 @@ $black: #000;
 }
 
 .hero-text-content {
-  max-width: 46ch;
   margin-left: calc((100% - 1150px) / 2);
 }
 
@@ -262,14 +266,53 @@ $black: #000;
 
 .advantages-box {
   display: flex;
+  gap: 118px;
 }
 
 .advantages-box-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.advantages .section-title {
+  margin-bottom: 103px;
+}
+
+.advantages img {
+  max-width: 252px;
 }
 
 /* ********************************************************/
 /* FOOTER */
 /* ********************************************************/
-// 16 18 22 24 36
+
+/* ********************************************************/
+/* MEDIA QUERIES */
+/* ********************************************************/
+@media all and (max-width: 1023px) {
+  .hero-text-content {
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .hero-visual-content {
+    margin-top: 200px;
+  }
+}
+
+@media all and (max-width: 959px) {
+  .advantages-box {
+    flex-direction: column;
+  }
+
+  .main-menu,
+  .menu-link-sign-in {
+    display: none;
+  }
+}
+
+@media all and (max-width: 717px) {
+}
