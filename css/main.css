@@ -56,6 +56,10 @@
   border-radius: 30px;
 }
 
+.btn-green:hover {
+  background-color: #3da744;
+}
+
 .main-title,
 .section-title,
 .plain-text {
@@ -114,7 +118,8 @@
 
 .menu-link:hover,
 .menu-link-sign-in:hover {
-  text-decoration: underline 2px #99adb7;
+  color: #000;
+  transition: all 0.25s;
 }
 
 .menu-link-sign-in {
@@ -219,11 +224,20 @@
   }
 }
 /* ********************************************************/
-/* PROS */
+/* ADVANTAGES */
 /* ********************************************************/
-.pros {
+.advantages {
   background-color: #dff8eb;
   height: 800px;
+}
+
+.advantages-box {
+  display: flex;
+}
+
+.advantages-box-item {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ********************************************************/
