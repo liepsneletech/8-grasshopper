@@ -1,9 +1,10 @@
 :root {
   --accent-color: #45c14e;
   --text-color: #002c43;
-  --bg-canvas: #fcfcfc
-  --bg-light: #dff8eb
-  --bg-dark: #00324b
+  --bg-canvas: #fcfcfc;
+  --bg-light: #dff8eb;
+  --bg-dark: #00324b;
+  --white: #fff;
 }
 
 body,
@@ -16,5 +17,10 @@ body * {
 }
 
 body {
+  background-color: var(--bg-canvas);
   font-family: Poppins, sans-serif;
+}
+
+.accent-bg {
+  background-color: var(--accent-color);
 }

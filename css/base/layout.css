@@ -1,3 +1,14 @@
 .container-full {
-  background-color: yellow;
+  width: 100%;
+  padding-inline: 20px;
+}
+
+.row-1260 {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.row-700 {
+  max-width: 700px;
+  margin: 0 auto;
 }

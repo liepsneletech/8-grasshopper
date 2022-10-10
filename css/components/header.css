@@ -1,0 +1,17 @@
+.header,
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu {
+  width: 100%;
+}
+
+.main-menu > a:last-child {
+  margin-left: auto;
+}
+
+.main-menu > a {
+  text-decoration: none;
+}
