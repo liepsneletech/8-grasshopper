@@ -1,0 +1,19 @@
+:root {
+  --accent-color: #45c14e;
+  --text-color: #002c43;
+  --bg-canvas: #fcfcfc
+  --bg-light: #dff8eb
+  --bg-dark: #00324b
+}
+
+body,
+body * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
