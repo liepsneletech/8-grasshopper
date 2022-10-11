@@ -1,7 +1,13 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .header,
 .main-menu {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .main-menu {
@@ -10,8 +16,16 @@
 
 .main-menu > a:last-child {
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .main-menu > a {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #99adb7;
+}
+
+.main-menu > a:hover {
+  color: #000;
 }

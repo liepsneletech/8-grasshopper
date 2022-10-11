@@ -19,8 +19,13 @@ body * {
 body {
   background-color: var(--bg-canvas);
   font-family: Poppins, sans-serif;
+  color: var(--text-color);
 }
 
 .accent-bg {
   background-color: var(--accent-color);
+}
+
+.display-none {
+  display: none;
 }

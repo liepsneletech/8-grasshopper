@@ -18,16 +18,15 @@
     <!-- components -->
     <link rel="stylesheet" href="./css/components/top-bar.css" />
     <link rel="stylesheet" href="./css/components/header.css" />
-    <link rel="stylesheet" href="./css/components/hero.css" />
     <!-- custom style -->
-    <link rel="stylesheet" href="./css/base/home.css" />
+    <link rel="stylesheet" href="./css/pages/home.css" />
   </head>
   <body>
-    <section class="top-bar container-full accent-bg">
+    <section class="top-bar container accent-bg">
       <a href="#" class="">Now available in Spanish!</a>
     </section>
 
-    <header class="header row-1260">
+    <header class="header container row-fluid">
       <a href="/">
         <img src="img/logo-desktop.svg" alt="grasshopper logo" />
       </a>
@@ -41,10 +40,31 @@
       </nav>
     </header>
 
-    <section>HERO</section>
+    <section class="hero row-lg">
+      <h1 class="main-title">
+        Welcome to Grasshopper, the coding app for beginners
+      </h1>
+      <p class="main-description">
+        Learning to code
+        <span class="dynamic-text-item">opens new doors</span>
+      </p>
+      <div class="display-none">
+        <span class="dynamic-text-item">creates new hobbies</span>
+        <span class="dynamic-text-item">launches new careers</span>
+        <span class="dynamic-text-item">develops new skills</span>
+        <span class="dynamic-text-item">expands your network</span>
+      </div>
+    </section>
 
-    <main>MAIN</main>
+    <main>
+      <section class="row-lg">ADVANTAGES</section>
+      <section class="row-sm">STORIES</section>
+      <section class="row-lg">DEVICES SUPPORT</section>
+      <section class="row-lg">FEATURES SLIDER</section>
+      <section class="row-fluid">CONCEPTS</section>
+      <section class="row-md">GET STARTED</section>
+    </main>
 
-    <footer>FOOTER</footer>
+    <footer class="row-sm">FOOTER</footer>
   </body>
 </html>
