@@ -25,7 +25,3 @@ body {
 .accent-bg {
   background-color: var(--accent-color);
 }
-
-.display-none {
-  display: none;
-}

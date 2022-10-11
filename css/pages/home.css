@@ -1,12 +1,71 @@
-.main-title {
+.hero {
+  min-height: 980px;
+}
+
+.hero .main-title {
   font-size: 34px;
   width: 46%;
+  padding-top: 95px;
+  margin-bottom: 30px;
 }
 
 .main-description {
   font-size: 18px;
 }
 
-.hero .main-title {
-  margin-bottom: 30px;
+.hero-images {
+  position: relative;
+}
+
+.hero-images img {
+  position: absolute;
+}
+
+.hero-tree {
+  left: 0;
+}
+
+.hero-leaf {
+  left: 10%;
+}
+
+.hero-smartphone {
+  right: 18%;
+  top: -70px;
+}
+
+.hero-loptop {
+  right: 435px;
+  top: 135px;
+}
+
+.hero-grasshopper {
+  right: 0;
+  top: 120px;
+}
+
+.hero-cloud-back {
+  right: 0;
+}
+
+.hero-cloud-front {
+  right: 0;
+}
+
+.hero-tree,
+.hero-grasshopper {
+  z-index: 1;
+}
+
+.hero-loptop,
+.hero-leaf {
+  z-index: 2;
+}
+
+.hero-smartphone {
+  z-index: 3;
+}
+
+.hero-cloud-front {
+  z-index: 4;
 }
