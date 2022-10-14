@@ -15,41 +15,69 @@
 
 .hero-images {
   position: relative;
+  max-height: 800px;
+  aspect-ratio: 7 / 4;
 }
 
-.hero-images img {
+.hero-image {
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: 90%;
 }
 
 .hero-tree {
-  left: 0;
+  background-image: url(http://localhost:4008/img/tree.svg);
+  left: -1%;
+  top: 27%;
+  width: 272px;
+  height: 367px;
 }
 
 .hero-leaf {
-  left: 10%;
+  background-image: url(http://localhost:4008/img/leaf.svg);
+  left: 15%;
+  top: 27%;
+  width: 166px;
+  height: 366px;
 }
 
 .hero-smartphone {
-  right: 18%;
-  top: -70px;
+  background-image: url(http://localhost:4008/img/smartphone.png);
+  right: 22%;
+  top: -9%;
+  width: 288px;
+  height: 610px;
 }
 
 .hero-loptop {
-  right: 435px;
-  top: 135px;
+  background-image: url(http://localhost:4008/img/loptop.png);
+  right: 34%;
+  top: 17%;
+  width: 456px;
+  height: 263px;
 }
 
 .hero-grasshopper {
-  right: 0;
-  top: 120px;
+  background-image: url(http://localhost:4008/img/grasshopper.svg);
+  right: 4%;
+  top: 15%;
+  width: 569px;
+  height: 588px;
 }
 
 .hero-cloud-back {
+  background-image: url(http://localhost:4008/img/cloud-back.svg);
   right: 0;
+  width: 370px;
+  height: 126px;
 }
 
 .hero-cloud-front {
-  right: 0;
+  background-image: url(http://localhost:4008/img/cloud-front.svg);
+  right: 34%;
+  top: 53%;
+  width: 273px;
+  height: 92px;
 }
 
 .hero-tree,
@@ -68,4 +96,36 @@
 
 .hero-cloud-front {
   z-index: 4;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 920px) {
+  .hero .main-title {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-image {
+    background-size: 45%;
+  }
+
+  .hero-tree {
+  }
+  .hero-leaf {
+  }
+  .hero-smartphone {
+  }
+  .hero-loptop {
+  }
+  .hero-grasshopper {
+  }
+  .hero-cloud-back {
+  }
+  .hero-cloud-front {
+  }
 }

@@ -29,3 +29,11 @@
 .main-menu > a:hover {
   color: #000;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+  .main-menu {
+    display: none;
+  }
+}
