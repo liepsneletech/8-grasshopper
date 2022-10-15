@@ -1,131 +1,181 @@
-.hero {
-  min-height: 980px;
+/* HERO SECTION */
+
+.hero.container {
+  padding: 0;
+}
+
+.hero .row-lg {
+  padding: 0 20px;
 }
 
 .hero .main-title {
   font-size: 34px;
   width: 46%;
-  padding-top: 95px;
+  padding-top: 75px;
   margin-bottom: 30px;
+  line-height: 1.4;
 }
 
-.main-description {
+.hero-description {
   font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hills-bg {
+  background: url(../../img/hills-bg.svg) no-repeat;
+
+  background-size: cover;
 }
 
 .hero-images {
   position: relative;
-  max-height: 800px;
-  aspect-ratio: 7 / 4;
+  aspect-ratio: 17 / 8;
 }
 
 .hero-image {
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: 90%;
 }
 
 .hero-tree {
-  background-image: url(http://localhost:4008/img/tree.svg);
   left: -1%;
-  top: 27%;
-  width: 272px;
-  height: 367px;
-}
-
-.hero-leaf {
-  background-image: url(http://localhost:4008/img/leaf.svg);
-  left: 15%;
-  top: 27%;
-  width: 166px;
-  height: 366px;
-}
-
-.hero-smartphone {
-  background-image: url(http://localhost:4008/img/smartphone.png);
-  right: 22%;
-  top: -9%;
-  width: 288px;
-  height: 610px;
-}
-
-.hero-loptop {
-  background-image: url(http://localhost:4008/img/loptop.png);
-  right: 34%;
-  top: 17%;
-  width: 456px;
-  height: 263px;
-}
-
-.hero-grasshopper {
-  background-image: url(http://localhost:4008/img/grasshopper.svg);
-  right: 4%;
   top: 15%;
-  width: 569px;
-  height: 588px;
-}
-
-.hero-cloud-back {
-  background-image: url(http://localhost:4008/img/cloud-back.svg);
-  right: 0;
-  width: 370px;
-  height: 126px;
-}
-
-.hero-cloud-front {
-  background-image: url(http://localhost:4008/img/cloud-front.svg);
-  right: 34%;
-  top: 53%;
-  width: 273px;
-  height: 92px;
-}
-
-.hero-tree,
-.hero-grasshopper {
+  width: calc(100vw * 0.2);
   z-index: 1;
 }
 
-.hero-loptop,
 .hero-leaf {
+  left: 15%;
+  top: 15%;
+  width: calc(100vw * 0.12);
   z-index: 2;
 }
 
 .hero-smartphone {
+  right: 22%;
+  top: -21%;
+  width: calc(100vw * 0.2);
   z-index: 3;
 }
 
+.hero-loptop {
+  right: 36%;
+  top: 12%;
+  width: calc(100vw * 0.32);
+  z-index: 2;
+}
+
+.hero-grasshopper {
+  right: 3%;
+  top: 0;
+  width: calc(100vw * 0.42);
+  z-index: 1;
+}
+
+.hero-cloud-back {
+  right: 34%;
+  top: 49%;
+  width: calc(100vw * 0.27);
+  z-index: 2;
+}
+
 .hero-cloud-front {
+  right: 37%;
+  top: 61%;
+  width: calc(100vw * 0.2);
   z-index: 4;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width: 920px) {
-  .hero .main-title {
-    width: 80%;
+@media (min-width: 1360px) {
+  .hero-tree {
+    width: calc((100vw - (100vw - 1360px)) * 0.2);
+  }
+
+  .hero-leaf {
+    width: calc((100vw - (100vw - 1360px)) * 0.12);
+  }
+
+  .hero-smartphone {
+    width: calc((100vw - (100vw - 1360px)) * 0.21);
+  }
+
+  .hero-loptop {
+    width: calc((100vw - (100vw - 1360px)) * 0.34);
+  }
+
+  .hero-grasshopper {
+    width: calc((100vw - (100vw - 1360px)) * 0.42);
+  }
+
+  .hero-cloud-back {
+    width: calc((100vw - (100vw - 1360px)) * 0.27);
+  }
+
+  .hero-cloud-front {
+    width: calc((100vw - (100vw - 1360px)) * 0.2);
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .hero .main-title {
+    width: 70%;
+    margin-inline: auto;
+    padding-top: 40px;
+    font-size: 34px;
+  }
+  .hero .row-lg {
+    padding-bottom: 160px;
   }
 }
 
 @media (max-width: 720px) {
-  .hero-image {
-    background-size: 45%;
+  .hero .main-title {
+    width: 90%;
   }
 
-  .hero-tree {
+  .dynamic-text-item {
+    display: block;
+    padding-top: 10px;
   }
-  .hero-leaf {
+
+  .hero-images {
+    aspect-ratio: unset;
+    min-height: 500px;
   }
-  .hero-smartphone {
-  }
-  .hero-loptop {
-  }
+
+  .hero-tree,
+  .hero-leaf,
+  .hero-loptop,
   .hero-grasshopper {
+    display: none;
   }
-  .hero-cloud-back {
+
+  .hero-smartphone {
+    top: -15%;
+    right: 50%;
+    transform: translateX(50%);
+    width: calc(100vw * 0.5);
+    max-width: 270px;
+    min-width: 209px;
   }
+
+  .hero-cloud-back,
   .hero-cloud-front {
+    width: 208px;
+  }
+
+  .hero-cloud-back {
+    right: 3%;
+  }
+
+  .hero-cloud-front {
+    left: 0%;
+    transform: translateX(-27%);
   }
 }
+
+/* ADVANTAGES */
