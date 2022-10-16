@@ -16,7 +16,7 @@
   line-height: 1.4;
 }
 
-.hero-description {
+.hero-text-box {
   font-size: 18px;
   margin-bottom: 25px;
 }
@@ -84,6 +84,23 @@
   z-index: 4;
 }
 
+.hero-text-box {
+  display: flex;
+  gap: 7px;
+}
+
+.dynamic-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamic-text > .dynamic-text-item:nth-child(2),
+.dynamic-text > .dynamic-text-item:nth-child(3),
+.dynamic-text > .dynamic-text-item:nth-child(4),
+.dynamic-text > .dynamic-text-item:nth-child(5) {
+  display: none;
+}
+
 /* ADVANTAGES */
 
 .advantages {
@@ -124,14 +141,20 @@
   .hero {
     text-align: center;
   }
+
   .hero .main-title {
     width: 70%;
     margin-inline: auto;
     padding-top: 40px;
     font-size: 34px;
   }
+
   .hero .row-lg {
     padding-bottom: 160px;
+  }
+
+  .hero-text-box {
+    justify-content: center;
   }
 }
 
@@ -140,11 +163,12 @@
 
   .hero .main-title {
     width: 90%;
+    font-weight: 500;
   }
 
-  .dynamic-text-item {
-    display: block;
-    padding-top: 10px;
+  .hero-text-box {
+    flex-direction: column;
+    gap: 8px;
   }
 
   .hero-images {
