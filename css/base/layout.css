@@ -1,8 +1,11 @@
 .container {
   width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 .row-fluid,
+.row-xl,
 .row-lg,
 .row-md,
 .row-sm {
@@ -12,6 +15,10 @@
 .row-fluid {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.row-xl {
+  max-width: 1360px;
 }
 
 .row-lg {

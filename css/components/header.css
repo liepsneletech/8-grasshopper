@@ -3,6 +3,10 @@
   padding-bottom: 40px;
 }
 
+.mobile-logo {
+  display: none;
+}
+
 .header,
 .main-menu {
   display: flex;
@@ -28,4 +32,22 @@
 
 .main-menu > a:hover {
   color: #000;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: inline-block;
+  }
 }

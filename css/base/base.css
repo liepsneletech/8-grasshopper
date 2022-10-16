@@ -5,6 +5,7 @@
   --bg-light: #dff8eb;
   --bg-dark: #00324b;
   --white: #fff;
+  --btn-font-size: 20px;
 }
 
 body,
@@ -24,8 +25,4 @@ body {
 
 .accent-bg {
   background-color: var(--accent-color);
-}
-
-.display-none {
-  display: none;
 }
