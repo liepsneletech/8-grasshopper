@@ -1,0 +1,73 @@
+.hero-images {
+  display: grid;
+
+  max-width: 100vh;
+}
+
+.hero-image {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: flex;
+}
+
+.hero-tree {
+  background-image: url(http://localhost:4008/img/tree.svg);
+
+  width: 272px;
+  height: 367px;
+}
+
+.hero-leaf {
+  background-image: url(http://localhost:4008/img/leaf.svg);
+
+  width: 166px;
+  height: 366px;
+}
+
+.hero-smartphone {
+  background-image: url(http://localhost:4008/img/smartphone.png);
+
+  width: 288px;
+  height: 610px;
+  z-index: 3;
+}
+
+.hero-loptop {
+  background-image: url(http://localhost:4008/img/loptop.png);
+
+  width: 456px;
+  height: 263px;
+}
+
+.hero-grasshopper {
+  background-image: url(http://localhost:4008/img/grasshopper.svg);
+
+  width: 569px;
+  height: 588px;
+}
+
+.hero-cloud-back {
+  background-image: url(http://localhost:4008/img/cloud-back.svg);
+
+  width: 370px;
+  height: 126px;
+  z-index: 2;
+}
+
+.hero-cloud-front {
+  background-image: url(http://localhost:4008/img/cloud-front.svg);
+
+  width: 273px;
+  height: 92px;
+  z-index: 4;
+}
+
+.hero-tree,
+.hero-grasshopper {
+  z-index: 1;
+}
+
+.hero-loptop,
+.hero-leaf {
+  z-index: 2;
+}

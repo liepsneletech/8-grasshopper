@@ -5,91 +5,247 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grasshopper | Homepage</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- base style -->
+    <link rel="stylesheet" href="./css/base/base.css" />
+    <link rel="stylesheet" href="./css/base/layout.css" />
+    <!-- components -->
+    <link rel="stylesheet" href="./css/components/top-bar.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/buttons.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/pages/home.css" />
   </head>
-
   <body>
-    <div class="top-bar text-center">Now available in Spanish!</div>
+    <section class="top-bar container accent-bg">
+      <a href="#" class="">Now available in Spanish!</a>
+    </section>
 
-    <header class="header">
-      <div class="header-box d-flex">
-        <nav class="main-menu d-flex">
-          <a href="#"><img class="logo" src="./img/logo.blue.svg" /></a>
-          <a href="#" class="menu-link">What is coding</a>
-          <a href="#" class="menu-link">Curriculum</a>
-          <a href="#" class="menu-link">Glossary</a>
-          <a href="#" class="menu-link">About Us</a>
-          <a href="#" class="menu-link">FAQ</a>
-        </nav>
-        <a href="#" class="menu-link menu-link-sign-in">Sign In</a>
-      </div>
+    <header class="header container row-fluid">
+      <a href="/">
+        <img src="img/logo-desktop.svg" alt="grasshopper logo" class="main-logo"/>
+        <img src="img/logo-mobile.svg" alt="grasshopper logo" class="mobile-logo"/>
+      </a>
+      <nav class="main-menu">
+        <a href="#">What is Coding</a>
+        <a href="#">Curriculum</a>
+        <a href="#">Glossary</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Sign In</a>
+      </nav>
     </header>
 
-    <section class="hero-container">
-      <div class="hero-text-content">
-        <h1 class="main-title">
-          Welcome to Grasshopper, the coding app for beginners
-        </h1>
-        <div class="hero-description-box">
-          <p class="hero-description plain-text">Learning to code</p>
-          <span class="dynamic-text-items">
-            <span class="dynamic-text-item">opens new doors</span>
-            <span class="dynamic-text-item">creates new hobbies</span>
-            <span class="dynamic-text-item">launches new careers</span>
-            <span class="dynamic-text-item">develops news skills</span>
-            <span class="dynamic-text-item">expands your network</span>
-          </span>
-        </div>
-        <a href="#" class="btn-green">Start coding today</a>
-      </div>
+    <main>
+      <section class="hero container">
+        <div class="row-lg">
+          <h1 class="main-title">
+            Welcome to Grasshopper, the coding app for beginners
+          </h1>
+          <div class="hero-text-box">
+            <p class="hero-description">Learning to code</p>
+            <div class="dynamic-text">
+              <div class="dynamic-text-item">opens new doors</div>
+              <div class="dynamic-text-item">creates new hobbies</div>
+              <div class="dynamic-text-item">launches new careers</div>
+              <div class="dynamic-text-item">develops new skills</div>
+              <div class="dynamic-text-item">expands your network</div>
+            </div>
+          </div>
 
-      <div class="relative container">
-        <div class="hero-visual-content">
+          <a href="#" class="btn-green">Start coding today</a>
+          
+        </div>
+
+        <div class="hills-bg">
+          <div class="hero-images row-xl">
+            <img
+              src="./img/smartphone.png"
+              alt="Smartphone illustration"
+              class="hero-image hero-smartphone"
+            />
+            <img
+              src="./img/loptop.png"
+              alt="Loptop illustration"
+              class="hero-image hero-loptop"
+            />
+            <img
+              src="./img/tree.svg"
+              alt="Tree illustration"
+              class="hero-image hero-tree"
+            />
+            <img
+              src="./img/leaf.svg"
+              alt="Leaf illustration"
+              class="hero-image hero-leaf"
+            />
+            <img
+              src="./img/cloud-back.svg"
+              alt="Cloud illustration"
+              class="hero-image hero-cloud-back"
+            />
+            <img
+              src="./img/cloud-front.svg"
+              alt="Cloud illustration"
+              class="hero-image hero-cloud-front"
+            />
           <img
-            src="./img/tree-layer.png"
-            alt="tree illustration"
-            class="hero-img-layer tree"
-          />
-          <img
-            src="./img/leaf-layer.png"
-            alt="leaf illustration"
-            class="hero-img-layer leaf"
-          />
-          <img
-            src="./img/laptop-layer.png"
-            alt="laptop illustration"
-            class="hero-img-layer laptop"
-          />
-          <img
-            src="./img/smatphone-layer.png"
-            alt="smartphone illustration"
-            class="hero-img-layer smartphone"
-          />
-          <img
-            src="./img/grasshopper-layer.png"
-            alt="grasshopper illustration"
-            class="hero-img-layer grasshopper"
-          />
-          <img
-            src="./img/cloud-back-layer.png"
-            alt="cloud illustration"
-            class="hero-img-layer cloud-back"
-          />
-          <img
-            src="./img/cloud-front-layer.png"
-            alt="cloud illustration"
-            class="hero-img-layer cloud-front"
+            src="./img/grasshopper.svg"
+            alt="Grasshopper illustration"
+            class="hero-image hero-grasshopper"
           />
         </div>
-      </div>
-    </section>
-    <section class="pros full-container"></section>
-    <section class="stories container"></section>
-    <section class="devices-support container"></section>
-    <section class="features-slider container"></section>
-    <section class="learn-concepts container"></section>
-    <section class="get-started container"></section>
+      </section>
 
-    <footer></footer>
+      <section></section>
+
+      <section class="advantages container" >
+        <div class=" row-lg" style="background-color: #4de8e3">
+          ADVANTAGES. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+        </div>
+      </section>
+      <section class="container">
+       <div class="row-sm" style="background-color: #999">
+          STORIESLorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+       </div>
+      </section>
+      <section class="container">
+       <div class="row-lg" style="background-color: #4de8e3">
+          DEVICES SUPPORTLorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+       </div>
+      </section>
+      <section class="container">
+        <div class="row-lg" style="background-color: #999">
+          FEATURES SLIDERLorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+        </div>
+      </section>
+      <section class="container">
+       <div class="row-fluid" style="background-color: #dff8ec">
+          CONCEPTSLorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+       </div>
+      </section>
+      <section class="container">
+       <div class="row-md" style="background-color: #4de8e3">
+          GET STARTEDLorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus vel facilis sequi, cupiditate possimus atque
+          laboriosam! Minus fugiat sit recusandae, aspernatur, tempore rerum
+          architecto accusantium ipsum reprehenderit consequuntur maiores.
+          Excepturi obcaecati aliquam architecto aliquid nobis. Quidem laborum a
+          distinctio nobis natus quae, quos similique mollitia reiciendis. Vel
+          nulla quam est incidunt voluptates laudantium tempore ipsam. Ad natus
+          facere esse. Voluptates debitis blanditiis nam atque cum quasi
+          temporibus eos perferendis veniam expedita, eaque dolorum provident
+          consequatur. Placeat maxime eius ipsum laborum recusandae sunt magnam
+          nemo pariatur distinctio maiores. Officia, voluptatum? Harum recusandae
+          ipsam dolorum, magni incidunt corrupti ut, exercitationem culpa sed ea
+          voluptate distinctio et maiores rem iste a minima saepe aliquam eum
+          eaque itaque? Saepe similique nostrum molestias cum! Architecto delectus
+          sit nobis, laboriosam illo, atque aperiam facilis, laborum accusamus
+          adipisci optio eaque. Repudiandae blanditiis laborum deserunt unde
+          omnis, aliquam numquam exercitationem earum dignissimos perspiciatis,
+          corrupti, sequi quaerat fuga.
+       </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="row-sm" style="background-color: #00324b">
+        FOOTER Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+        tempore, neque optio alias quam quis totam sequi molestiae voluptas,
+        officia fuga sit et aliquid dolorem consequuntur ipsam numquam illum
+        repudiandae?
+      </div>
+    </footer>
   </body>
 </html>
